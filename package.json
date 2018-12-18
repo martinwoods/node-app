@@ -5,6 +5,11 @@
     },
     "name": "node-app",
     "description": "Hello Jenkins Test App",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
     "version": "0.0.1",
     "private": false,
     "dependencies": {
