@@ -1,6 +1,3 @@
-//Import Shared Library
-@Library('shared_lib@master')_
-
 pipeline {
   agent any
  
