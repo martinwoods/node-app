@@ -1,3 +1,6 @@
+//Import Shared Library
+@Library('shared_lib@master')_
+
 pipeline {
   agent any
  
@@ -16,12 +19,7 @@ pipeline {
     }
     stage ('shared lib script') {
       steps {
-          script {
-              sh "pwd"
-              sh "whoami"
-              sh "uname -a"
-              sh "uptime"
-          }
+          commandLineScript()
       }
     }
   }
